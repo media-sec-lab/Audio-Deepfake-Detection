@@ -94,8 +94,8 @@
         <td align="center">CQT, Power Spectrum</td>
         <td align="center">VGG, SincNet</td>
         <td align="center">CE</td>
-        <td align="center">LA: 8.01 (4)<br>PA: 1.51 (2)</td>
-        <td align="center">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></td>
+        <td align="center"><div style="width:70pt">LA: 8.01 (4)<br>PA: 1.51 (2)</div></td>
+        <td align="center"><div style="width:80pt">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></div></td>
 	</tr>
     <tr>
         <td align="center">Long-term high frequency features for synthetic speech detection <br> <a href="https://www.sciencedirect.com/science/article/pii/S1051200419301769#:~:text=The%20long-term%20information%20has%20been%20found%20to%20be,from%20the%20long-term%20constant-Q%20transform%20%28CQT%29%20based%20features.">Paper</a></td>
@@ -103,8 +103,8 @@
         <td align="center">ICQC, ICQCC, ICBC, ICLBC</td>
         <td align="center">DNN</td>
         <td align="center">CE</td>
-        <td align="center">LA: 7.78 (3)</td>
-        <td align="center">LA: 0.187 (3)</td>
+        <td align="center"><div style="width:70pt">LA: 7.78 (3)</div></td>
+        <td align="center"><div style="width:80pt">LA: 0.187 (3)</div></td>
     </tr>
     <tr>
         <td align="center">Voice spoofing countermeasure for logical access attacks detection <br> <a href="https://ieeexplore.ieee.org/document/9638512">Paper</a></td>
@@ -112,8 +112,8 @@
         <td align="center">ELTP-LFCC</td>
         <td align="center">DBiLSTM</td>
         <td align="center">—</td>
-        <td align="center"><b>LA: 0.74 (1)</b></td>
-        <td align="center"><b>LA: 0.008 (1)</b></td>
+        <td align="center"><div style="width:70pt"><b>LA: 0.74 (1)</b></div></td>
+        <td align="center"><div style="width:80pt"><b>LA: 0.008 (1)</b></div></td>
     </tr>
     <tr>
         <td align="center">Voice spoofing detector: A unified anti-spoofing framework <br> <a href="https://www.sciencedirect.com/science/article/pii/S0957417422002330">Paper</a></td> 
@@ -121,8 +121,8 @@
         <td align="center">ATP-GTCC</td>
         <td align="center">SVM</td>
         <td align="center">Hamming <br> Distance</td>
-        <td align="center">LA: 0.75 (2)<br><b>PA: 1.00 (1)</b></td>
-        <td align="center">LA: 0.050 (2)<br>PA: 0.064 (2)</td>
+        <td align="center"><div style="width:70pt">LA: 0.75 (2)<br><b>PA: 1.00 (1)</b></div></td>
+        <td align="center"><div style="width:80pt">LA: 0.050 (2)<br>PA: 0.064 (2)</div></td>
     </tr>
 </table>
 
@@ -420,7 +420,7 @@
         <td align="center">EER (%)</td>
     </tr>
     <tr>
-        <td align="center">Voice spoofing countermeasure for synthetic speech Detection <br> <a href="https://ieeexplore.ieee.org/document/9445238">Paper</a></td>
+        <td align="center">Voice spoofing countermeasure for synthetic speech detection <br> <a href="https://ieeexplore.ieee.org/document/9445238">Paper</a></td>
         <td align="center">GTCC, MFCC, Spectral Flux, Spectral Centroid</td>
         <td align="center">Bi-LSTM</td>
         <td align="center">—</td>
@@ -531,7 +531,7 @@
 
 # Reference
 More details about on the above, you may check the following this papers:
-[//]: # (```python)
+[//]:  (```python)
 
 [//]: # (# @ARTICLE{xuyuxiong2023,)
 
