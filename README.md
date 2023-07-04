@@ -86,11 +86,11 @@ th, td {
 }
 
 .col1 {
-  width: 30%;
+  width: 110%;
 }
 
 .col2 {
-  width: 70%;
+  width: 120%;
 }
 </style>
 
