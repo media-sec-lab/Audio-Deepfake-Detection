@@ -8,7 +8,7 @@
 - [Datasets](#Datasets)
 - [Audio Preprocessing](#audiopreprocessing)
   - [Commonly Used Noise Datasets](#noise1)
-  - [Audio Enhancement Methods](#AudioEnhancementMethods)
+  - [Audio Enhancement Methods](#ae)
 - [Feature Extraction](#featureextraction)
   - [Handcrafted Feature-based Forgery Detection](#hf1)
   - [Hybrid Feature-based Forgery Detection](#hf2)
@@ -66,7 +66,7 @@
 | ESC [Dataset](http://shujujishi.com/dataset/69b2bf03-d855-4f8b-ab96-1ec80e285863.html) |                                                                                                                       Including the ESC-50, ESC-10, and ESC-US.                                                                                                                       |
 |            FSD50K [Dataset](https://zenodo.org/record/4060432#.Y1kvcHZByUk)            |   An open dataset of human tagged sound events containing 51,197 Freesound clips totalling 108.3 hours of multi-labeled audio, unequally distributed across 200 classes from the AudioSet Ontology.                                                                                                          |
 
-## <span id="AudioEnhancementMethods">Audio Enhancement Methods</span>
+## <span id="ae">Audio Enhancement Methods</span>
 |                                                                                                                                                                               Method 	                                                                                                                                                                               |                                                                Description 	                                                                 |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------:|
 |                                                                                                                           SpecAugment <br> [Paper](https://arxiv.org/pdf/1904.08779.pdf)   [Code](https://github.com/DemisEom/SpecAugment)                                                                                                                           |                               Enhancement strategies include time warping, frequency masking and time masking                                |  
@@ -171,7 +171,7 @@
         <td align="center">LA: 0.052 (4)</td>
     </tr>
     <tr>
-        <td align="center">(Ma et al., 2021)</td>
+        <td align="center">Continual learning for fake audio detection <a href="https://arxiv.org/abs/2104.07286">Paper</a></td>
         <td align="center">-</td>
         <td align="center">LFCC</td>
         <td align="center">LCNN, DFWF</td>
@@ -180,7 +180,7 @@
         <td align="center">-</td>
     </tr>
     <tr>
-        <td align="center">(Ge et al., 2021)</td>
+        <td align="center">Partially-connected differentiable architecture search for deepfake and spoofing detection <a href="https://arxiv.org/abs/2104.03123v1">Paper</a> <a href="https://github.com/eurecom-asp/pc-darts-anti-spoofing">Code</a></td>
         <td align="center">Frequency Mask</td>
         <td align="center">LFCC</td>
         <td align="center">PC-DARTS</td>
@@ -189,7 +189,7 @@
         <td align="center">LA: 0.091 (8)</td>
     </tr>
     <tr>
-        <td align="center">(Zhang et al., 2021)</td>
+        <td align="center">One-class learning towards synthetic voice spoofing detection <a href="https://ieeexplore.ieee.org/abstract/document/9417604">Paper</a> <a href="https://github.com/yzyouzhang/AIR-ASVspoof">Code</a></td>
         <td align="center">-</td>
         <td align="center">LFCC</td>
         <td align="center">ResNet18</td>
@@ -198,16 +198,16 @@
         <td align="center">LA: 0.059 (5)</td>
     </tr>
     <tr>
-        <td align="center">(Li et al., 2021)</td>
+        <td align="center">Replay and synthetic speech detection with res2net architecture <a href="https://ieeexplore.ieee.org/abstract/document/9413828">Paper</a> <a href="https://github.com/lixucuhk/ASV-anti-spoofing-with-Res2Net">Code</a></td>
         <td align="center">-</td>
         <td align="center">CQT</td>
         <td align="center">SE-Res2Net50</td>
         <td align="center">BCE</td>
-        <td align="center">LA: 1.81 (4)<br>PA: 0.46 (2)</td>
+        <td align="center">LA: 2.50 (8)<br>PA: 0.46 (2)</td>
         <td align="center">LA: 0.074 (7)<br>PA: 0.012 (2)</td>
     </tr>
     <tr>
-        <td align="center">(Zhang et al., 2021)</td>
+        <td align="center">An empirical study on channel effects for synthetic voice spoofing countermeasure systems <a href="https://arxiv.org/abs/2104.01320">Paper</a> <a href="https://github.com/yzyouzhang/Empirical-Channel-CM">Code</a></td>
         <td align="center">RIR dataset noise addition, call coding, and device coding</td>
         <td align="center">LFCC</td>
         <td align="center">LCNN, ResNet-OC</td>
@@ -216,8 +216,8 @@
         <td align="center">-</td>
     </tr>
     <tr>
-        <td align="center">(Rostami et al., 2021)</td>
-        <td align="center">specAug, Attention Mask</td>
+        <td align="center">Efficient attention branch network with combined loss function for automatic speaker verification spoof detection <a href="https://link.springer.com/article/10.1007/s00034-023-02314-5">Paper</a> <a href="https://github.com/AmirmohammadRostami/ASV-anti-spoofingwith-EABN">Code</a></td>
+        <td align="center">SpecAug, Attention Mask</td>
         <td align="center">LFCC</td>
         <td align="center">EfficientNet-A0, SE-Res2Net50</td>
         <td align="center">WCE, Triplet Loss</td>
@@ -225,7 +225,7 @@
         <td align="center">LA: 0.507 (11)<br>PA: 0.024 (4)</td>
     </tr>
     <tr>
-        <td align="center">(Kwak et al., 2021)</td>
+        <td align="center">Resmax: Detecting voice spoofing attacks with residual network and max feature map <a href="https://ieeexplore.ieee.org/document/9412165">Paper</a></td>
         <td align="center">-</td>
         <td align="center">CQT</td>
         <td align="center">ResMax</td>
@@ -234,7 +234,7 @@
         <td align="center">LA: 0.060 (6)<br><b>PA: 0.009 (1)</b></td>
     </tr>
     <tr>
-        <td align="center">(Wang et al., 2022)</td>
+        <td align="center">Synthetic voice detection and audio splicing detection using se-res2net-conformer architecture <a href="https://ieeexplore.ieee.org/document/10037999">Paper</a></td>
         <td align="center">Adding noise according to a signal-to-noise ratio of 15dB or 25dB</td>
         <td align="center">CQT</td>
         <td align="center">SE-Res2Net34-Confromer</td>
@@ -243,7 +243,7 @@
         <td align="center">LA: 0.060 (6)</td>
     </tr>
     <tr>
-        <td align="center">(Li et al., 2022)</td>
+        <td align="center">Fastaudio: A learnable audio front-end for spoof speech detection <a href="https://ieeexplore.ieee.org/document/9746722">Paper</a> <a href="https://github.com/magnumresearchgroup/Fastaudio">Code</a></td>
         <td align="center">-</td>
         <td align="center">L-VQT</td>
         <td align="center">L-DenseNet</td>
@@ -252,7 +252,7 @@
         <td align="center">LA: 0.045 (3)</td>
     </tr>
     <tr>
-        <td align="center">(Xue et al., 2023)</td>
+        <td align="center">Learning from yourself: A self-distillation method for fake speech detection <a href="https://arxiv.org/abs/2303.01211">Paper</a></td>
         <td align="center">-</td>
         <td align="center">LPS, F0</td>
         <td align="center">ECANet, SENet</td>
@@ -261,7 +261,7 @@
         <td align="center">LA: 0.031 (2)<br>PA: 0.017 (3)</td>
     </tr>
     <tr>
-        <td align="center">(Ma et al., 2023)</td>
+        <td align="center">How to boost anti-spoofing with x-vectors <a href="https://ieeexplore.ieee.org/document/10022504">Paper</a></td>
         <td align="center">-</td>
         <td align="center">LFCC, MFCC</td>
         <td align="center">TDNN, SENet34</td>
@@ -273,18 +273,261 @@
 
 ## <span id="ete">End-to-end Forgery Detection</span>
 
+<table>
+	<tr>
+	    <td align="center" rowspan="2">Paper</td>
+	    <td align="center" colspan="4" >Audio Deepfake Detection</td>
+	    <td align="center" colspan="2">Results</td>  
+	</tr >
+    <tr>
+        <td align="center">Data Augmentation</td>
+        <td align="center">Feature Extraction</td>
+        <td align="center">Network Structure</td>
+        <td align="center">Loss Function</td>
+        <td align="center">EER (%)</td>
+        <td align="center">t-DCF</td>
+    </tr>
+    <tr>
+        <td align="center">A light convolutional GRU-RNN deep feature extractor for asv spoofing detection <a href="https://www.semanticscholar.org/paper/A-Light-Convolutional-GRU-RNN-Deep-Feature-for-ASV-Alan%C3%ADs-Peinado/a692a7c971238a24b2ae882a1b6925946ea5e498">Paper</a></td>
+        <td align="center">-</td>
+        <td align="center">LC-GRNN</td>
+        <td align="center">PLDA</td>
+        <td align="center">-</td>
+        <td align="center">LA: 6.28 (13) <br> PA: 2.23</td>
+        <td align="center">LA: 0.152 (10) <br> PA: 0.061</td>
+    </tr>
+    <tr>
+        <td align="center">Rw-resnet: A novel speech anti-spoofing model using raw waveform <a href="https://arxiv.org/abs/2108.05684v2">Paper</a></td>
+        <td align="center">-</td>
+        <td align="center">1D Convolution Residual Block</td>
+        <td align="center">ResNet</td>
+        <td align="center">CE</td>
+        <td align="center">LA: 2.98 (11)</td>
+        <td align="center">LA: 0.082 (9)</td>
+    </tr>
+    <tr>
+        <td align="center">Raw differentiable architecture search for speech deepfake and spoofing detection <a href="https://arxiv.org/abs/2107.12212">Paper</a> <a href="https://github.com/eurecom-asp/raw-pc-darts-anti-spoofing">Code</a></td>
+        <td align="center">Masking Filter</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">PC-DARTS</td>
+        <td align="center">P2SGrad</td>
+        <td align="center">LA: 1.77 (10)</td>
+        <td align="center">LA: 0.052 (7)</td>
+    </tr>
+    <tr>
+        <td align="center">Towards end-to-end synthetic speech detection <a href="https://arxiv.org/abs/2106.06341">Paper</a> <a href="https://github.com/ghua-ac/end-to-end-synthetic-speech-detection">Code</a></td>
+        <td align="center">-</td>
+        <td align="center">DNN</td>
+        <td align="center">Res-TSSDNet, Inc-TSSDNet</td>
+        <td align="center">WCE</td>
+        <td align="center">LA: 1.64 (9)</td>
+        <td align="center">LA: 0.048 (6)</td>
+    </tr> 
+    <tr>
+        <td align="center">End-to-end anti-spoofing with RawNet2 <a href="https://ieeexplore.ieee.org/abstract/document/9414234">Paper</a> <a href="https://github.com/eurecom-asp/rawnet2-antispoofing">Code</a></td>
+        <td align="center">-</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">RawNet2</td>
+        <td align="center">CE</td>
+        <td align="center">LA: 1.12 (5)</td>
+        <td align="center">LA: 0.033 (3)</td>
+    </tr>
+    <tr>
+        <td align="center">Long-term variable Q transform: A novel time-frequency transform algorithm for synthetic speech detection <a href="https://www.sciencedirect.com/science/article/pii/S1051200421002955">Paper</a></td>
+        <td align="center">-</td>
+        <td align="center">FastAudio filter</td>
+        <td align="center">X-vector, ECAPA-TDNN</td>
+        <td align="center">-</td>
+        <td align="center">LA: 1.54 (7)</td>
+        <td align="center">LA: 0.045 (5)</td>
+    </tr>
+    <tr>
+        <td align="center">Fully automated end-to-end fake audio detection <a href="https://arxiv.org/abs/2208.09618">Paper</a></td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">Wav2Vec2</td>
+        <td align="center">light-DARTS</td>
+        <td align="center">Comparative loss</td>
+        <td align="center">LA: 1.08 (4)</td>
+        <td align="center">-</td>
+    <tr>
+        <td align="center">Audio anti-spoofing using a simple attention module and joint optimization based on additive angular margin loss and meta-learning <a href="https://arxiv.org/abs/2211.09898">Paper</a></td>
+        <td align="center">-</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">RawNet2, SimAM</td>
+        <td align="center">AAM Softmax, MSE</td>
+        <td align="center">LA: 0.99 (3)</td>
+        <td align="center">LA: 0.029 (2)</td>
+    </tr> 
+    <tr>
+        <td align="center">AASIST: Audio anti-spoofing using integrated spectro-temporal graph attention networks <a href="https://arxiv.org/abs/2110.01200">Paper</a> <a href="https://github.com/clovaai/aasist">Code</a></td>
+        <td align="center">-</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">RawNet2, MGO, HS-GAL</td>
+        <td align="center">CE</td>
+        <td align="center">LA: 0.83 (2)</td>
+        <td align="center"><b>LA: 0.028 (1)</b></td>
+    </tr>
+    <tr>
+        <td align="center">Ai-synthesized voice detection using neural vocoder artifacts <a href="https://arxiv.org/abs/2304.13085">Paper</a> <a href="https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts">Code</a></td>
+        <td align="center">Resampling, noise addition</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">RawNet2</td>
+        <td align="center">CE, Softmax</td>
+        <td align="center">LA: 4.54 (12)</td>
+        <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">To-RawNet: Improving rawnet with tcn and orthogonal regularization for fake audio detection <a href="https://arxiv.org/abs/2305.13701">Paper</a></td>
+        <td align="center">RawBoost</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">RawNet2, TCN</td>
+        <td align="center">CE, Orthogonal loss</td>
+        <td align="center">LA: 1.58 (8)</td>
+        <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">Speaker-Aware Anti-spoofing <a href="https://arxiv.org/abs/2303.01126">Paper</a></td> 
+        <td align="center">-</td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">AASIST, M2S converter</td>
+        <td align="center">CE</td>
+        <td align="center">LA: 1.13 (6)</td>
+        <td align="center">LA: 0.038 (4)</td>
+    </tr>
+    <tr>
+        <td align="center">Spoofing attacker also benefits from self-supervised pretrained model <a href="https://arxiv.org/abs/2305.15518">Paper</a></td>
+        <td align="center">-</td>
+        <td align="center">HuBERT, WavLM</td>
+        <td align="center">Residual block, Conv-TasNet</td>
+        <td align="center">AAM softmax</td>
+        <td align="center"><b>LA: 0.44 (1)</b></td>
+        <td align="center">-</td>
+    </tr>
+</table>
 
-## <span id="ff">Feature-level Fusion Forgery Detection</span>
 
-# <span id="nt">Network Training</span>
+## <span id="ff">Feature Fusion-based Forgery Detection</span>
 
-## <span id="ssl">Self-supervised Learning-based Forgery Detection</span>
-
-## <span id="at">Adversarial Training-based Forgery Detection</span>
-
+<table>
+	<tr>
+	    <td align="center" rowspan="2">Paper</td>
+	    <td align="center" colspan="3" >Audio Deepfake Detection</td>
+	    <td align="center" >Results</td>  
+	</tr >
+    <tr>
+        <td align="center">Feature Extraction</td>
+        <td align="center">Network Structure</td>
+        <td align="center">Loss Function</td>
+        <td align="center">EER (%)</td>
+    </tr>
+    <tr>
+        <td align="center">Voice spoofing countermeasure for synthetic speech Detection <a href="https://ieeexplore.ieee.org/document/9445238">Paper</a></td>
+        <td align="center">GTCC, MFCC, Spectral Flux, Spectral Centroid</td>
+        <td align="center">Bi-LSTM</td>
+        <td align="center">-</td>
+        <td align="center">LA: 3.05 (4)</td>
+    </tr>
+    <tr>
+        <td align="center">Combining automatic speaker verification and prosody analysis for synthetic speech detection <a href="https://arxiv.org/abs/2210.17222">Paper</a></td>
+        <td align="center">MFCC, Mel-Spectrogram</td>
+        <td align="center">ECAPA-TDNN, Prosody Encoder</td>
+        <td align="center">BCE</td>
+        <td align="center">LA: 5.39 (5)</td>
+    </tr>
+    <tr>
+        <td align="center">Automatic speaker verification spoofing and deepfake detection using wav2vec 2.0 and data augmentation <a href="https://arxiv.org/abs/2202.12233">Paper</a></td>
+        <td align="center">Sinc Filter, Wav2Vec2</td>
+        <td align="center">AASIST</td>
+        <td align="center">Contrastive Loss, WCE</td>
+        <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">Overlapped frequency-distributed network: Frequency-aware voice spoofing countermeasure <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/choi22c_interspeech.pdf">Paper</a></td>
+        <td align="center">Mel-Spectrogram, CQT</td>
+        <td align="center">LCNN, ResNet</td>
+        <td align="center">-</td>
+        <td align="center">LA: 1.35 (2)<br>PA: 0.35</td>
+    </tr>
+    <tr>
+        <td align="center">Detection of cross-dataset fake audio based on prosodic and pronunciation features <a href="https://arxiv.org/abs/2305.13700">Paper</a></td>
+        <td align="center">Phoneme Feature, Prosody Feature, Wav2Vec2</td>
+        <td align="center">LCNN, Bi-LSTM</td>
+        <td align="center">CTC</td>
+        <td align="center">LA: 1.58 (3)</td>
+    </tr>
+    <tr>
+        <td align="center">Betray oneself: A novel audio deepfake detection model via mono-to-stereo conversion <a href="https://arxiv.org/abs/2305.16353">Paper</a> <a href="https://github.com/AI-S2-Lab/M2S-ADD">Code</a></td>
+        <td align="center">Sinc Filter</td>
+        <td align="center">AASIST, M2S Converter</td>
+        <td align="center">CE</td>
+        <td align="center"><b>LA: 1.34 (1)</b></td>
+    </tr>
+</table>
 
 ## <span id="ml">Multi-task Learning-based Forgery Detection</span>
 
+<table>
+	<tr>
+	    <td align="center" rowspan="2">Paper</td>
+	    <td align="center" colspan="3" >Audio Deepfake Detection</td>
+	    <td align="center" colspan="2" >Results</td>  
+	</tr >
+    <tr>
+        <td align="center">Feature Extraction</td>
+        <td align="center">Network Structure</td>
+        <td align="center">Loss Function</td>
+        <td align="center">EER (%)</td>
+        <td align="center">t-DCF</td>
+    </tr>
+    <tr>
+        <td align="center">Multi-task learning in utterance-level and segmental-level spoof detection <a href="https://arxiv.org/abs/2107.14132">Paper</a></td>
+          <td align="center">LFCC</td>
+          <td align="center">SELCNN, Bi-LSTM</td>
+            <td align="center">P2SGrad</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">SA-SASV: An end-to-end spoof-aggregated spoofing-aware speaker verification system <a href="https://arxiv.org/abs/2203.06517">Paper</a> <a href="https://github.com/magnumresearchgroup/SA-SASV">Code</a></td>
+          <td align="center">Fbanks, Sinc Filter</td>
+          <td align="center">ECAPA-TDNN, ARawNet</td>
+            <td align="center">BCE, AAM Softmax, CE</td>
+            <td align="center">LA: 4.86 (4)</td>
+            <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">Ranjan et al., 2022 <a href="https://arxiv.org/abs/2202.12233">Paper</a></td>
+          <td align="center">Sinc Filter</td>
+          <td align="center">RawNet2, TCM, SCM</td>
+            <td align="center">CE</td>
+            <td align="center">LA: 2.45 (3)</td>
+            <td align="center">LA: 0.062 (2)</td>
+    </tr>
+    <tr>
+        <td align="center">STATNet: Spectral and temporal features based multi-task network for audio spoofing detection <a href="https://ieeexplore.ieee.org/document/10007949">Paper</a></td>
+          <td align="center">Mel Filter, Sinc Filter</td>
+          <td align="center">ECAPA-TDNN, AASIST</td>
+            <td align="center">BCE</td>
+            <td align="center">LA: 1.53 (2)</td>
+            <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">DSVAE: Interpretable disentangled representation for synthetic speech detection <a href="https://arxiv.org/abs/2304.03323">Paper</a></td>
+          <td align="center">Spectrogram</td>
+          <td align="center">VAE</td>
+            <td align="center">KL Divergence Loss, BCE</td>
+            <td align="center">LA: 6.56 (5)</td>
+            <td align="center">-</td>
+    </tr>
+    <tr>
+        <td align="center">End-to-end dual-branch network towards synthetic speech detection <a href="https://arxiv.org/abs/2205.12233">Paper</a> <a href="https://github.com/imagecbj/End-to-End-Dual-Branch-Network-Towards-Synthetic-Speech-Detection">Code</a></td>
+          <td align="center">LFCC, CQT</td>
+          <td align="center">Dual-Branch Network</td>
+            <td align="center">Classification Loss, Fake Type Classification Loss</td>
+            <td align="center"><b>LA: 0.80 (1)</b></td>
+            <td align="center"><b>LA: 0.021 (1)</b></td>
+    </tr>
+</table>
 
 # Reference
 More details about on the above, you may check the following this papers:
