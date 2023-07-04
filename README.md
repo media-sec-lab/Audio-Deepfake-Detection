@@ -4,7 +4,7 @@
 >The related contents of this review will be updated next.
 
 # Table of contents
-- [Speech Large Model](#Speech Large Model)
+- [Speech Large Model](##SpeechLargeModel)
 - [Datasets](#Datasets)
 - [Audio Deepfake Detection](#Audio Deepfake Detection)
     - [Audio Preprocessing](##Audio Preprocessing)
@@ -23,8 +23,7 @@
 - [Statement](##Statement)
 - [Contact](##Contact)
 
-# <span id="Speech Large Model">Speech Large Model</span>
-***
+# <span id="SpeechLargeModel">Speech Large Model</span>
 |                             Model 	                              | Publisher 	 | Achievable Tasks                                                                                                                                                                            |
 |:----------------------------------------------------------------:|:-----------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       VoiceBox   <br>  [Website](https://voicebox.metademolab.com/) 	        |   Meta 	    | 1. Synthesize speech across six languages<br> 2. Remove transient noise<br> 3. Edit content<br> 4. Transfer audio style within and across languages<br>5. Generate diverse speech samples 	 |
@@ -32,7 +31,6 @@
 |    USM  <br>  [Website](https://sites.research.google/usm/) 	    |  Google 	   | 1. ASR beyond 100 languages<br> 2. Downstream ASR tasks <br> 3. Automated Speech Translation (AST)                                                                 |
 
 # Datasets
-***
 |  Attack Types   |                                                  Dataset 	                                                  |          Number of Audio  <br>（Subdataset：Real/Fake） 	          |     Language 	     |
 |:---------------:|:-----------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------:|:------------------:|
 |      TTS 	      | WaveFake    <br> [Dataset](https://zenodo.org/record/5642694)   [Paper](https://arxiv.org/abs/2111.02813) 	 |                         16283/117985 	                          | English/Japanese 	 |
