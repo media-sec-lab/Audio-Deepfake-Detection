@@ -94,7 +94,7 @@
         <td align="center">CQT, Power Spectrum</td>
         <td align="center">VGG, SincNet</td>
         <td align="center">CE</td>
-        <td align="center"><div style="width:300pt">LA: 8.01 (4)<br>PA: 1.51 (2)</div></td>
+        <td align="center">LA: 8.01 (4)<br>PA: 1.51 (2)</td>
         <td align="center">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></td>
 	</tr>
     <tr>
