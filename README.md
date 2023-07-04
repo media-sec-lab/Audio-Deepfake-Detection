@@ -85,8 +85,8 @@
         <td align="center">Feature Extraction</td>
         <td align="center">Network Framework</td>
         <td align="center">Loss Function</td>
-        <td align="center"><div style="width:70pt">EER (%)</div></td>
-        <td align="center"><div style="width:80pt">t-DCF</div></td>
+        <td align="center"><div style="width:100pt">EER (%)</div></td>
+        <td align="center"><div style="width:120pt">t-DCF</div></td>
 	</tr>
 	<tr>
 	    <td align="center">Detecting spoofing attacks using VGG and SincNet: BUT-Omilia submission to ASVspoof 2019 challenge <br> <a href="https://arxiv.org/abs/1907.12908">Paper</a>  <a href="https://github.com/mravanelli/SincNet">Code</a></td>
@@ -94,8 +94,8 @@
         <td align="center">CQT, Power Spectrum</td>
         <td align="center">VGG, SincNet</td>
         <td align="center">CE</td>
-        <td align="center"><div style="width:70pt">LA: 8.01 (4)<br>PA: 1.51 (2)</div></td>
-        <td align="center"><div style="width:80pt">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></div></td>
+        <td align="center"><div style="width:100pt">LA: 8.01 (4)<br>PA: 1.51 (2)</div></td>
+        <td align="center"><div style="width:120pt">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></div></td>
 	</tr>
     <tr>
         <td align="center">Long-term high frequency features for synthetic speech detection <br> <a href="https://www.sciencedirect.com/science/article/pii/S1051200419301769#:~:text=The%20long-term%20information%20has%20been%20found%20to%20be,from%20the%20long-term%20constant-Q%20transform%20%28CQT%29%20based%20features.">Paper</a></td>
@@ -103,8 +103,8 @@
         <td align="center">ICQC, ICQCC, ICBC, ICLBC</td>
         <td align="center">DNN</td>
         <td align="center">CE</td>
-        <td align="center"><div style="width:70pt">LA: 7.78 (3)</div></td>
-        <td align="center"><div style="width:80pt">LA: 0.187 (3)</div></td>
+        <td align="center"><div style="width:100pt">LA: 7.78 (3)</div></td>
+        <td align="center"><div style="width:120pt">LA: 0.187 (3)</div></td>
     </tr>
     <tr>
         <td align="center">Voice spoofing countermeasure for logical access attacks detection <br> <a href="https://ieeexplore.ieee.org/document/9638512">Paper</a></td>
@@ -112,8 +112,8 @@
         <td align="center">ELTP-LFCC</td>
         <td align="center">DBiLSTM</td>
         <td align="center">—</td>
-        <td align="center"><div style="width:70pt"><b>LA: 0.74 (1)</b></div></td>
-        <td align="center"><div style="width:80pt"><b>LA: 0.008 (1)</b></div></td>
+        <td align="center"><div style="width:100pt"><b>LA: 0.74 (1)</b></div></td>
+        <td align="center"><div style="width:120pt"><b>LA: 0.008 (1)</b></div></td>
     </tr>
     <tr>
         <td align="center">Voice spoofing detector: A unified anti-spoofing framework <br> <a href="https://www.sciencedirect.com/science/article/pii/S0957417422002330">Paper</a></td> 
@@ -121,8 +121,8 @@
         <td align="center">ATP-GTCC</td>
         <td align="center">SVM</td>
         <td align="center">Hamming <br> Distance</td>
-        <td align="center"><div style="width:70pt">LA: 0.75 (2)<br><b>PA: 1.00 (1)</b></div></td>
-        <td align="center"><div style="width:80pt">LA: 0.050 (2)<br>PA: 0.064 (2)</div></td>
+        <td align="center"><div style="width:100pt">LA: 0.75 (2)<br><b>PA: 1.00 (1)</b></div></td>
+        <td align="center"><div style="width:120pt">LA: 0.050 (2)<br>PA: 0.064 (2)</div></td>
     </tr>
 </table>
 
