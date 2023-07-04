@@ -7,17 +7,17 @@
 - [Speech Large Model](#SpeechLargeModel)
 - [Datasets](#Datasets)
 - [Audio Preprocessing](#audiopreprocessing)
-  - [Commonly Used Noise Datasets](##noise1)
-  - [Audio Enhancement Methods](##AudioEnhancementMethods)
+  - [Commonly Used Noise Datasets](#noise1)
+  - [Audio Enhancement Methods](#AudioEnhancementMethods)
 - [Feature Extraction](#featureextraction)
-  - [Handcrafted Feature-based Forgery Detection](##hf1)
-  - [Hybrid Feature-based Forgery Detection](##hf2)
-  - [End-to-End Forgery Detection](##End-to-EndForgeryDetection)
-  - [Feature-level Fusion Forgery Detection](##Feature-levelFusionForgeryDetection)
-- [Network Training](#NetworkTraining)
-  - [Supervised Learning-based Forgery Detection](##SupervisedLearning-basedForgeryDetection)
-  - [Adversarial Training-based Forgery Detection](##AdversarialTraining-basedForgeryDetection)
-  - [Multi-task Learning-based Forgery Detection](##Multi-taskLearning-basedForgeryDetection)
+  - [Handcrafted Feature-based Forgery Detection](#hf1)
+  - [Hybrid Feature-based Forgery Detection](#hf2)
+  - [End-to-End Forgery Detection](#ete)
+  - [Feature-level Fusion Forgery Detection](#ff)
+- [Network Training](#nt)
+  - [Supervised Learning-based Forgery Detection](#ssl)
+  - [Adversarial Training-based Forgery Detection](#at)
+  - [Multi-task Learning-based Forgery Detection](#ml)
 - [Reference](#Reference)
 - [Statement](#Statement)
 - [Contact](#Contact)
@@ -271,21 +271,19 @@
     </tr>
 </table>
 
-## End-to-end Forgery Detection
+## <span id="ete">End-to-end Forgery Detection</span>
 
 
-## Feature-level Fusion Forgery Detection
+## <span id="ff">Feature-level Fusion Forgery Detection</span>
+
+# <span id="nt">Network Training</span>
+
+## <span id="ssl">Self-supervised Learning-based Forgery Detection</span>
+
+## <span id="at">Adversarial Training-based Forgery Detection</span>
 
 
-# Network Training
-
-## Self-supervised Learning-based Forgery Detection
-
-## Adversarial Training-based Forgery Detection
-***
-## Multi-task Learning-based Forgery Detection
-
-
+## <span id="ml">Multi-task Learning-based Forgery Detection</span>
 
 
 # Reference
