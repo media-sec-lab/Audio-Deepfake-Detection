@@ -74,26 +74,6 @@
 # <span id="featureextraction">Feature Extraction</span>
 
 ## <span id="hf1">Handcrafted Feature-based Forgery Detection</span>
-<style>
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-}
-
-.col1 {
-  width: 110%;
-}
-
-.col2 {
-  width: 120%;
-}
-</style>
-
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
@@ -114,8 +94,8 @@ th, td {
         <td align="center">CQT, Power Spectrum</td>
         <td align="center">VGG, SincNet</td>
         <td align="center">CE</td>
-        <td align="center" class="col1">LA: 8.01 (4)<br>PA: 1.51 (2)</td>
-        <td align="center" class="col2">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></td>
+        <td align="center">LA: 8.01 (4)<br>PA: 1.51 (2)</td>
+        <td align="center">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></td>
 	</tr>
     <tr>
         <td align="center">Long-term high frequency features for synthetic speech detection <br> <a href="https://www.sciencedirect.com/science/article/pii/S1051200419301769#:~:text=The%20long-term%20information%20has%20been%20found%20to%20be,from%20the%20long-term%20constant-Q%20transform%20%28CQT%29%20based%20features.">Paper</a></td>
@@ -123,8 +103,8 @@ th, td {
         <td align="center">ICQC, ICQCC, ICBC, ICLBC</td>
         <td align="center">DNN</td>
         <td align="center">CE</td>
-        <td align="center"  class="col1">LA: 7.78 (3)</td>
-        <td align="center"  class="col2"><div style="width:80pt">LA: 0.187 (3)</div></td>
+        <td align="center">LA: 7.78 (3)</td>
+        <td align="center">LA: 0.187 (3)</td>
     </tr>
     <tr>
         <td align="center">Voice spoofing countermeasure for logical access attacks detection <br> <a href="https://ieeexplore.ieee.org/document/9638512">Paper</a></td>
@@ -132,8 +112,8 @@ th, td {
         <td align="center">ELTP-LFCC</td>
         <td align="center">DBiLSTM</td>
         <td align="center">—</td>
-        <td align="center"  class="col1"><b>LA: 0.74 (1)</b></td>
-        <td align="center"  class="col2"><b>LA: 0.008 (1)</b></td>
+        <td align="center"><b>LA: 0.74 (1)</b></td>
+        <td align="center"><b>LA: 0.008 (1)</b></td>
     </tr>
     <tr>
         <td align="center">Voice spoofing detector: A unified anti-spoofing framework <br> <a href="https://www.sciencedirect.com/science/article/pii/S0957417422002330">Paper</a></td> 
@@ -141,8 +121,8 @@ th, td {
         <td align="center">ATP-GTCC</td>
         <td align="center">SVM</td>
         <td align="center">Hamming <br> Distance</td>
-        <td align="center"  class="col1">LA: 0.75 (2)<br><b>PA: 1.00 (1)</b></td>
-        <td align="center"  class="col2">LA: 0.050 (2)<br>PA: 0.064 (2)</td>
+        <td align="center">LA: 0.75 (2)<br><b>PA: 1.00 (1)</b></td>
+        <td align="center">LA: 0.050 (2)<br>PA: 0.064 (2)</td>
     </tr>
 </table>
 
