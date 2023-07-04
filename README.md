@@ -128,6 +128,7 @@
     </tr>
 </table>
 
+# <span id="nt">Network Training</span>
 ## <span id="hf2">Handcrafted Feature-based Forgery Detection</span>
 <table>
 	<tr>
