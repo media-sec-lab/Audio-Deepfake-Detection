@@ -19,9 +19,9 @@
       - [Supervised Learning-based Forgery Detection](####Supervised Learning-based Forgery Detection)
       - [Adversarial Training-based Forgery Detection](####Adversarial Training-based Forgery Detection)
       - [Multi-task Learning-based Forgery Detection](####Multi-task Learning-based Forgery Detection)
-- [References](##References)
-- [Statement](##Statement)
-- [Contact](##Contact)
+- [References](#References)
+- [Statement](#Statement)
+- [Contact](#Contact)
 
 # <span id="SpeechLargeModel">Speech Large Model</span>
 |                             Model 	                              | Publisher 	 | Achievable Tasks                                                                                                                                                                            |
