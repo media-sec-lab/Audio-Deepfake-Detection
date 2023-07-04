@@ -4,7 +4,6 @@
 >The related contents of this review will be updated next.
 
 # Table of contents
-***
 - [Speech Large Model](#Speech Large Model)
 - [Datasets](#Datasets)
 - [Audio Deepfake Detection](#Audio Deepfake Detection)
