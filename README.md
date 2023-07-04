@@ -6,12 +6,12 @@
 # Table of contents
 - [Speech Large Model](#SpeechLargeModel)
 - [Datasets](#Datasets)
-- [Audio Preprocessing](#preprocessing)
-  - [Commonly Used Noise Datasets](##NoiseDatasets)
+- [Audio Preprocessing](#audiopreprocessing)
+  - [Commonly Used Noise Datasets](##noise1)
   - [Audio Enhancement Methods](##AudioEnhancementMethods)
-- [Feature Extraction](#FeatureExtraction)
-  - [Handcrafted Feature-based Forgery Detection](##HandcraftedFeature-basedForgeryDetection)
-  - [Hybrid Feature-based Forgery Detection](##HybridFeature-basedForgeryDetection)
+- [Feature Extraction](#featureextraction)
+  - [Handcrafted Feature-based Forgery Detection](##hf1)
+  - [Hybrid Feature-based Forgery Detection](##hf2)
   - [End-to-End Forgery Detection](##End-to-EndForgeryDetection)
   - [Feature-level Fusion Forgery Detection](##Feature-levelFusionForgeryDetection)
 - [Network Training](#NetworkTraining)
@@ -52,9 +52,9 @@
 | TTS、VC和Replay 	 |                       ASVspoof 2021  <br>  [Dataset](https://www.asvspoof.org/index2021.html) 	                    [Paper](https://arxiv.org/abs/2109.00535) 	                                                                        | LA: 18452/163114  <br>PA: 126630/816480  <br>PF: 14869/519059 	 |        English 	        |
 
 
-# <span id="preprocessing">Audio Preprocessing</span>
+# <span id="audiopreprocessing">Audio Preprocessing</span>
 
-## <span id="NoiseDatasets">Commonly used Noise Datasets</span>
+## <span id="noise1">Commonly Used Noise Datasets</span>
 |                                       Dataset 	                                        |                                                                                                                                     Description 	                                                                                                                                     |
 |:--------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                      MUSAN [Dataset](https://www.openslr.org/17/)                      |       A corpus of music, speech and noise                      |
@@ -73,9 +73,9 @@
 |                                                                                                                     WavAugment <br> [Paper](https://arxiv.org/abs/2007.00991)  [Code](https://github.com/facebookresearch/WavAugment)                                                                                                                     | Enhancement strategies include pitch randomization, reverberation, additive noise, time dropout (temporal masking), band reject and clipping | 
 |                                                              RawBoost  <br> [Paper](https://arxiv.org/abs/2007.00991)      [Code](https://github.com/TakHemlata/RawBoost-antispoofing)                                                               | Enhancement strategies include linear and non-linear convolutive noise, impulsive signal-dependent additive noise and stationary signal-independent additive noise |    
 
-# <span id="FeatureExtraction">Feature Extraction</span>
+# <span id="featureextraction">Feature Extraction</span>
 
-## <span id="HandcraftedFeature-basedForgeryDetection">Handcrafted Feature-based Forgery Detection</span>
+## <span id="hf1">Handcrafted Feature-based Forgery Detection</span>
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
@@ -128,8 +128,7 @@
     </tr>
 </table>
 
-## Hybrid Feature-based Forgery Detection
-***
+## <span id="hf2">Handcrafted Feature-based Forgery Detection</span>
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
