@@ -15,8 +15,6 @@
   - [End-to-End Forgery Detection](#ete)
   - [Feature-level Fusion Forgery Detection](#ff)
 - [Network Training](#nt)
-[//]: # (  - [Supervised Learning-based Forgery Detection]&#40;#ssl&#41;)
-[//]: # (  - [Adversarial Training-based Forgery Detection]&#40;#at&#41;)
   - [Multi-task Learning-based Forgery Detection](#ml)
 - [Reference](#Reference)
 - [Statement](#Statement)
