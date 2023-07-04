@@ -4,24 +4,24 @@
 >The related contents of this review will be updated next.
 
 # Table of contents
-- [Speech Large Model](##SpeechLargeModel)
+- [Speech Large Model](#SpeechLargeModel)
 - [Datasets](#Datasets)
-- [Audio Deepfake Detection](#Audio Deepfake Detection)
-    - [Audio Preprocessing](##Audio Preprocessing)
-      - [Commonly Used Noise Datasets](###Commonly Used Noise Datasets)
-      - [Audio Enhancement Methods](###Audio Enhancement Methods)
-    - [Feature Extraction](###Feature Extraction)
-      - [Handcrafted Feature-based Forgery Detection](####Handcrafted Feature-based Forgery Detection)
-      - [Hybrid Feature-based Forgery Detection](####Hybrid Feature-based Forgery Detection)
-      - [End-to-End Forgery Detection](####End-to-End Forgery Detection)
-      - [Feature-level Fusion Forgery Detection](####Feature-level Fusion Forgery Detection)
-    - [Network Training](###Network Training)
-      - [Supervised Learning-based Forgery Detection](####Supervised Learning-based Forgery Detection)
-      - [Adversarial Training-based Forgery Detection](####Adversarial Training-based Forgery Detection)
-      - [Multi-task Learning-based Forgery Detection](####Multi-task Learning-based Forgery Detection)
-- [References](#Reference)
-- [Statement](#Statement)
-- [Contact](#Contact)
+- [Audio Deepfake Detection](#AudioDeepfakeDetection)
+    - [Audio Preprocessing](##AudioPreprocessing)
+      - [Commonly Used Noise Datasets](###NoiseDatasets)
+      - [Audio Enhancement Methods](###AudioEnhancementMethods)
+    - [Feature Extraction](###FeatureExtraction)
+      - [Handcrafted Feature-based Forgery Detection](####HandcraftedFeature-basedForgeryDetection)
+      - [Hybrid Feature-based Forgery Detection](####HybridFeature-basedForgeryDetection)
+      - [End-to-End Forgery Detection](####End-to-EndForgeryDetection)
+      - [Feature-level Fusion Forgery Detection](####Feature-levelFusionForgeryDetection)
+    - [Network Training](###NetworkTraining)
+      - [Supervised Learning-based Forgery Detection](####SupervisedLearning-basedForgeryDetection)
+      - [Adversarial Training-based Forgery Detection](####AdversarialTraining-basedForgeryDetection)
+      - [Multi-task Learning-based Forgery Detection](####Multi-taskLearning-basedForgeryDetection)
+- [Reference](##Reference)
+- [Statement](##Statement)
+- [Contact](##Contact)
 
 # <span id="SpeechLargeModel">Speech Large Model</span>
 |                             Model 	                              | Publisher 	 | Achievable Tasks                                                                                                                                                                            |
@@ -30,7 +30,7 @@
 | SpeechGPT <br>  [Code](https://github.com/0nutation/SpeechGPT) 	 | Fudan University | 1. Perceive and generate multi-modal contents <br> 2. Spoken dialogue LLM with strong human instruction                                                                                     |
 |    USM  <br>  [Website](https://sites.research.google/usm/) 	    |  Google 	   | 1. ASR beyond 100 languages<br> 2. Downstream ASR tasks <br> 3. Automated Speech Translation (AST)                                                                 |
 
-# Datasets
+# <span id="Datasets">Datasets</span>
 |  Attack Types   |                                                  Dataset 	                                                  |          Number of Audio  <br>（Subdataset：Real/Fake） 	          |     Language 	     |
 |:---------------:|:-----------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------:|:------------------:|
 |      TTS 	      | WaveFake    <br> [Dataset](https://zenodo.org/record/5642694)   [Paper](https://arxiv.org/abs/2111.02813) 	 |                         16283/117985 	                          | English/Japanese 	 |
@@ -52,15 +52,13 @@
 | TTS、VC和Replay 	 |                      ASVspoof 2019 <br>  [Dataset](https://datashare.ed.ac.uk/handle/10283/3336) 	          [Paper](https://arxiv.org/abs/1904.05441)	                                                                        |            LA: 12483/108978  <br>PA: 28890/189540 	             |        English 	        |
 | TTS、VC和Replay 	 |                       ASVspoof 2021  <br>  [Dataset](https://www.asvspoof.org/index2021.html) 	                    [Paper](https://arxiv.org/abs/2109.00535) 	                                                                        | LA: 18452/163114  <br>PA: 126630/816480  <br>PF: 14869/519059 	 |        English 	        |
 
-[^1]:https://arxiv.org/abs/2111.02813
-# Audio Deepfake Detection
-***
 
-## Audio Preprocessing
-***
+# <span id="AudioDeepfakeDetection">Audio Deepfake Detection</span>
 
-### Commonly used Noise Datasets
-***
+## <span id="AudioPreprocessing">Audio Preprocessing</span>
+
+
+### <span id="NoiseDatasets">Commonly used Noise Datasets</span>
 |                                       Dataset 	                                        |                                                                                                                                     Description 	                                                                                                                                     |
 |:--------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                      MUSAN [Dataset](https://www.openslr.org/17/)                      |       A corpus of music, speech and noise                      |
@@ -72,18 +70,16 @@
 | ESC [Dataset](http://shujujishi.com/dataset/69b2bf03-d855-4f8b-ab96-1ec80e285863.html) |                                                                                                                       Including the ESC-50, ESC-10, and ESC-US.                                                                                                                       |
 |            FSD50K [Dataset](https://zenodo.org/record/4060432#.Y1kvcHZByUk)            |   An open dataset of human tagged sound events containing 51,197 Freesound clips totalling 108.3 hours of multi-labeled audio, unequally distributed across 200 classes from the AudioSet Ontology.                                                                                                          |
 
-### Audio Enhancement Methods
+### <span id="AudioEnhancementMethods">Audio Enhancement Methods</span>
 |                                                                                                                                                                               Method 	                                                                                                                                                                               |                                                                Description 	                                                                 |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------:|
 |                                                                                                                           SpecAugment <br> [Paper](https://arxiv.org/pdf/1904.08779.pdf)   [Code](https://github.com/DemisEom/SpecAugment)                                                                                                                           |                               Enhancement strategies include time warping, frequency masking and time masking                                |  
 |                                                                                                                     WavAugment <br> [Paper](https://arxiv.org/abs/2007.00991)  [Code](https://github.com/facebookresearch/WavAugment)                                                                                                                     | Enhancement strategies include pitch randomization, reverberation, additive noise, time dropout (temporal masking), band reject and clipping | 
 |                                                              RawBoost  <br> [Paper](https://arxiv.org/abs/2007.00991)      [Code](https://github.com/TakHemlata/RawBoost-antispoofing)                                                               | Enhancement strategies include linear and non-linear convolutive noise, impulsive signal-dependent additive noise and stationary signal-independent additive noise |    
 
-## Feature Extraction
-***
+## <span id="FeatureExtraction">Feature Extraction</span>
 
-### Handcrafted Feature-based Forgery Detection
-***
+### <span id="HandcraftedFeature-basedForgeryDetection">Handcrafted Feature-based Forgery Detection</span>
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
@@ -99,7 +95,7 @@
         <td align="center">t-DCF</td>
 	</tr>
 	<tr>
-	    <td align="center">Detecting spoofing attacks using VGG and SincNet: BUT-Omilia submission to ASVspoof 2019 challenge <a href="https://arxiv.org/abs/1907.12908">Paper</a> and <a href="https://github.com/mravanelli/SincNet">SincNet Code</a></td>
+	    <td align="center">Detecting spoofing attacks using VGG and SincNet: BUT-Omilia submission to ASVspoof 2019 challenge <a href="https://arxiv.org/abs/1907.12908">Paper</a>  <a href="https://github.com/mravanelli/SincNet">Code</a></td>
 	    <td align="center">—</td>
         <td align="center">CQT, power spectrum</td>
         <td align="center">VGG, SincNet</td>
@@ -153,7 +149,7 @@
         <td align="center">t-DCF</td>
     </tr>
     <tr>
-        <td align="center">Light convolutional neural network with feature genuinization for detection of synthetic speech attacks <a href="https://arxiv.org/pdf/2009.09637.pdf">FG-LCNN Paper</a></td>
+        <td align="center">Light convolutional neural network with feature genuinization for detection of synthetic speech attacks <a href="https://arxiv.org/pdf/2009.09637.pdf">Paper</a></td>
         <td align="center">-</td>
         <td align="center">CQT-based LPS</td>
         <td align="center">LCNN</td>
@@ -162,7 +158,7 @@
         <td align="center">LA: 0.102 (10)</td>
     </tr>
     <tr>
-        <td align="center">Siamese convolutional neural network using gaussian probability feature for spoofing speech detection <a href="http://www.interspeech2020.org/uploadfile/pdf/Mon-3-2-9.pdf">Siamese CNN Paper</a></td>
+        <td align="center">Siamese convolutional neural network using gaussian probability feature for spoofing speech detection <a href="http://www.interspeech2020.org/uploadfile/pdf/Mon-3-2-9.pdf">Paper</a></td>
         <td align="center">-</td>
         <td align="center">LFCC</td>
         <td align="center">Siamese CNN</td>
@@ -171,7 +167,7 @@
         <td align="center">LA: 0.093 (5)<br>PA: 0.195 (2)</td>
     </tr>
     <tr>
-        <td align="center">Generalization of audio deepfake detection <a href="https://www.researchgate.net/profile/Avrosh-Kumar/publication/345141913_Generalization_of_Audio_Deepfake_Detection/links/600cb38945851553a0678e07/Generalization-of-Audio-Deepfake-Detection.pdf">ResNet18-LCML-FM Paper</a></td>
+        <td align="center">Generalization of audio deepfake detection <a href="https://www.researchgate.net/profile/Avrosh-Kumar/publication/345141913_Generalization_of_Audio_Deepfake_Detection/links/600cb38945851553a0678e07/Generalization-of-Audio-Deepfake-Detection.pdf">Paper</a></td>
         <td align="center">RIR and MUSAN</td>
         <td align="center">LFB</td>
         <td align="center">ResNet18</td>
