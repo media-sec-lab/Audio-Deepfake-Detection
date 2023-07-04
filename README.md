@@ -74,6 +74,26 @@
 # <span id="featureextraction">Feature Extraction</span>
 
 ## <span id="hf1">Handcrafted Feature-based Forgery Detection</span>
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.col1 {
+  width: 30%;
+}
+
+.col2 {
+  width: 70%;
+}
+</style>
+
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
@@ -94,8 +114,8 @@
         <td align="center">CQT, Power Spectrum</td>
         <td align="center">VGG, SincNet</td>
         <td align="center">CE</td>
-        <td align="center"><div style="width:70pt">LA: 8.01 (4)<br>PA: 1.51 (2)</div></td>
-        <td align="center"><div style="width:80pt">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></div></td>
+        <td align="center" class="col1"><div style="width:70pt">LA: 8.01 (4)<br>PA: 1.51 (2)</div></td>
+        <td align="center" class="col2"><div style="width:80pt">LA: 0.208 (4)<br><b>PA: 0.037 (1)</b></div></td>
 	</tr>
     <tr>
         <td align="center">Long-term high frequency features for synthetic speech detection <br> <a href="https://www.sciencedirect.com/science/article/pii/S1051200419301769#:~:text=The%20long-term%20information%20has%20been%20found%20to%20be,from%20the%20long-term%20constant-Q%20transform%20%28CQT%29%20based%20features.">Paper</a></td>
