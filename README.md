@@ -6,22 +6,21 @@
 # Table of contents
 - [Speech Large Model](#SpeechLargeModel)
 - [Datasets](#Datasets)
-- [Audio Deepfake Detection](#AudioDeepfakeDetection)
-    - [Audio Preprocessing](##AudioPreprocessing)
-      - [Commonly Used Noise Datasets](###NoiseDatasets)
-      - [Audio Enhancement Methods](###AudioEnhancementMethods)
-    - [Feature Extraction](###FeatureExtraction)
-      - [Handcrafted Feature-based Forgery Detection](####HandcraftedFeature-basedForgeryDetection)
-      - [Hybrid Feature-based Forgery Detection](####HybridFeature-basedForgeryDetection)
-      - [End-to-End Forgery Detection](####End-to-EndForgeryDetection)
-      - [Feature-level Fusion Forgery Detection](####Feature-levelFusionForgeryDetection)
-    - [Network Training](###NetworkTraining)
-      - [Supervised Learning-based Forgery Detection](####SupervisedLearning-basedForgeryDetection)
-      - [Adversarial Training-based Forgery Detection](####AdversarialTraining-basedForgeryDetection)
-      - [Multi-task Learning-based Forgery Detection](####Multi-taskLearning-basedForgeryDetection)
-- [Reference](##Reference)
-- [Statement](##Statement)
-- [Contact](##Contact)
+- [Audio Preprocessing](#AudioPreprocessing)
+  - [Commonly Used Noise Datasets](##NoiseDatasets)
+  - [Audio Enhancement Methods](##AudioEnhancementMethods)
+- [Feature Extraction](#FeatureExtraction)
+  - [Handcrafted Feature-based Forgery Detection](##HandcraftedFeature-basedForgeryDetection)
+  - [Hybrid Feature-based Forgery Detection](##HybridFeature-basedForgeryDetection)
+  - [End-to-End Forgery Detection](##End-to-EndForgeryDetection)
+  - [Feature-level Fusion Forgery Detection](##Feature-levelFusionForgeryDetection)
+- [Network Training](#NetworkTraining)
+  - [Supervised Learning-based Forgery Detection](##SupervisedLearning-basedForgeryDetection)
+  - [Adversarial Training-based Forgery Detection](##AdversarialTraining-basedForgeryDetection)
+  - [Multi-task Learning-based Forgery Detection](##Multi-taskLearning-basedForgeryDetection)
+- [Reference](#Reference)
+- [Statement](#Statement)
+- [Contact](#Contact)
 
 # <span id="SpeechLargeModel">Speech Large Model</span>
 |                             Model 	                              | Publisher 	 | Achievable Tasks                                                                                                                                                                            |
@@ -53,12 +52,9 @@
 | TTS、VC和Replay 	 |                       ASVspoof 2021  <br>  [Dataset](https://www.asvspoof.org/index2021.html) 	                    [Paper](https://arxiv.org/abs/2109.00535) 	                                                                        | LA: 18452/163114  <br>PA: 126630/816480  <br>PF: 14869/519059 	 |        English 	        |
 
 
-# <span id="AudioDeepfakeDetection">Audio Deepfake Detection</span>
+# <span id="AudioPreprocessing">Audio Preprocessing</span>
 
-## <span id="AudioPreprocessing">Audio Preprocessing</span>
-
-
-### <span id="NoiseDatasets">Commonly used Noise Datasets</span>
+## <span id="NoiseDatasets">Commonly used Noise Datasets</span>
 |                                       Dataset 	                                        |                                                                                                                                     Description 	                                                                                                                                     |
 |:--------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                      MUSAN [Dataset](https://www.openslr.org/17/)                      |       A corpus of music, speech and noise                      |
@@ -70,16 +66,16 @@
 | ESC [Dataset](http://shujujishi.com/dataset/69b2bf03-d855-4f8b-ab96-1ec80e285863.html) |                                                                                                                       Including the ESC-50, ESC-10, and ESC-US.                                                                                                                       |
 |            FSD50K [Dataset](https://zenodo.org/record/4060432#.Y1kvcHZByUk)            |   An open dataset of human tagged sound events containing 51,197 Freesound clips totalling 108.3 hours of multi-labeled audio, unequally distributed across 200 classes from the AudioSet Ontology.                                                                                                          |
 
-### <span id="AudioEnhancementMethods">Audio Enhancement Methods</span>
+## <span id="AudioEnhancementMethods">Audio Enhancement Methods</span>
 |                                                                                                                                                                               Method 	                                                                                                                                                                               |                                                                Description 	                                                                 |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------:|
 |                                                                                                                           SpecAugment <br> [Paper](https://arxiv.org/pdf/1904.08779.pdf)   [Code](https://github.com/DemisEom/SpecAugment)                                                                                                                           |                               Enhancement strategies include time warping, frequency masking and time masking                                |  
 |                                                                                                                     WavAugment <br> [Paper](https://arxiv.org/abs/2007.00991)  [Code](https://github.com/facebookresearch/WavAugment)                                                                                                                     | Enhancement strategies include pitch randomization, reverberation, additive noise, time dropout (temporal masking), band reject and clipping | 
 |                                                              RawBoost  <br> [Paper](https://arxiv.org/abs/2007.00991)      [Code](https://github.com/TakHemlata/RawBoost-antispoofing)                                                               | Enhancement strategies include linear and non-linear convolutive noise, impulsive signal-dependent additive noise and stationary signal-independent additive noise |    
 
-## <span id="FeatureExtraction">Feature Extraction</span>
+# <span id="FeatureExtraction">Feature Extraction</span>
 
-### <span id="HandcraftedFeature-basedForgeryDetection">Handcrafted Feature-based Forgery Detection</span>
+## <span id="HandcraftedFeature-basedForgeryDetection">Handcrafted Feature-based Forgery Detection</span>
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
@@ -132,7 +128,7 @@
     </tr>
 </table>
 
-### Hybrid Feature-based Forgery Detection
+## Hybrid Feature-based Forgery Detection
 ***
 <table>
 	<tr>
@@ -276,25 +272,24 @@
     </tr>
 </table>
 
-### End-to-end Forgery Detection
-***
+## End-to-end Forgery Detection
 
-### Feature-level Fusion Forgery Detection
-***
 
-## Network Training
+## Feature-level Fusion Forgery Detection
+
+
+# Network Training
+
+## Self-supervised Learning-based Forgery Detection
+
+## Adversarial Training-based Forgery Detection
 ***
-### Self-supervised Learning-based Forgery Detection
-***
-### Adversarial Training-based Forgery Detection
-***
-### Multi-task Learning-based Forgery Detection
-***
+## Multi-task Learning-based Forgery Detection
+
 
 
 
 # Reference
-***
 More details about on the above, you may check the following this papers:
 ```python
 # @ARTICLE{xuyuxiong2023,
@@ -310,11 +305,9 @@ More details about on the above, you may check the following this papers:
 ```
 
 # Statement
-***
 The purpose of this project is to establish a database based on  audio deepfake detection, solely for the purpose of communication and learning. All the content collected in this project is sourced from journals and the internet, and we express sincere gratitude to the researchers and authors who have published related research achievements.  In the event of a complaint of copyright infringement, the content will be removed as appropriate.
 
 # Contact
-***
 We are glad to hear from you. If you have any questions, please feel free to contact <xuyuxiong2022@email.szu.edu.cn>.
 
 
