@@ -85,8 +85,8 @@
         <td align="center">Feature Extraction</td>
         <td align="center">Network Framework</td>
         <td align="center">Loss Function</td>
-        <td align="center">EER (%)</td>
-        <td align="center">t-DCF</td>
+        <td align="center"><div style="width:70pt">EER (%)</div></td>
+        <td align="center"><div style="width:80pt">t-DCF</div></td>
 	</tr>
 	<tr>
 	    <td align="center">Detecting spoofing attacks using VGG and SincNet: BUT-Omilia submission to ASVspoof 2019 challenge <br> <a href="https://arxiv.org/abs/1907.12908">Paper</a>  <a href="https://github.com/mravanelli/SincNet">Code</a></td>
