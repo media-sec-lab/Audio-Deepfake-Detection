@@ -1,7 +1,7 @@
 [//]: # (# 语音深度伪造检测研究进展 Research progress on audio deepfake detection)
 [//]: # (***)
 
->The related contents of this review will be updated next.
+>This repository contains a list of audio deepfake resources. We also have a survey report on Audio Deepfake Detection (ADD). We include sections on ADD Datasets, Audio Preprocessing, Feature Extraction and Network Training to introduce beginners to carefully selected material to learn the ADD domain. We will endeavour to maintain this repository on an ongoing basis for a fixed period.
 
 # Table of contents
 - [Speech Large Model](#SpeechLargeModel)
