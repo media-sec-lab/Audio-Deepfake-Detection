@@ -125,7 +125,7 @@
         <td align="center">LA: 0.050 (2)<br>PA: 0.064 (2)</td>
     </tr>
 </table>
-
+Note: "—" indicates not mentioned in the paper. Values in brackets in the experimental results are the ranking of each column in the LA or PA scenario, and bolded values are the best results for that scenario.
 
 ## <span id="hf2">Hybrid Feature-based Forgery Detection</span>
 <table>
@@ -269,6 +269,8 @@
         <td align="center"><b>LA: 0.024 (1)</b></td>
     </tr>
 </table>
+Note: "—" indicates not mentioned in the paper. Values in brackets in the experimental results are the ranking of each column in the LA or PA scenario, and bolded values are the best results for that scenario.
+
 
 ## <span id="ete">End-to-end Forgery Detection</span>
 
@@ -403,6 +405,7 @@
         <td align="center">—</td>
     </tr>
 </table>
+Note: "—" indicates not mentioned in the paper. Values in brackets in the experimental results are the ranking of each column in the LA scenario, and bolded values are the best results for that scenario.
 
 
 ## <span id="ff">Feature Fusion-based Forgery Detection</span>
@@ -462,6 +465,7 @@
         <td align="center"><b>LA: 1.34 (1)</b></td>
     </tr>
 </table>
+Note: "—" indicates not mentioned in the paper. Values in brackets in the experimental results are the ranking of each column in the LA scenario, and bolded values are the best results for that scenario.
 
 # <span id="nt">Network Training</span>
 ## <span id="ml">Multi-task Learning-based Forgery Detection</span>
@@ -528,6 +532,7 @@
             <td align="center"><b>LA: 0.021 (1)</b></td>
     </tr>
 </table>
+Note: "—" indicates not mentioned in the paper. Values in brackets in the experimental results are the ranking of each column in the LA scenario, and bolded values are the best results for that scenario.
 
 # Reference
 More details about on the above, you may check the following this papers:
