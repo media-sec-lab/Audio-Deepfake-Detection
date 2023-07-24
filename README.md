@@ -1,10 +1,11 @@
+
 [//]: # (# 语音深度伪造检测研究进展 Research progress on audio deepfake detection)
 [//]: # (***)
 
 >This repository contains a list of audio deepfake resources. We also have a survey report on Audio Deepfake Detection (ADD). We include sections on ADD Datasets, Audio Preprocessing, Feature Extraction and Network Training to introduce beginners to carefully selected material to learn the ADD domain. We will endeavour to maintain this repository on an ongoing basis for a fixed period.
 
 # Table of contents
-- [Speech Large Model](#SpeechLargeModel)
+- [Audio Large Model](#SpeechLargeModel)
 - [Datasets](#Datasets)
 - [Audio Preprocessing](#audiopreprocessing)
   - [Commonly Used Noise Datasets](#noise1)
@@ -20,14 +21,16 @@
 - [Statement](#Statement)
 - [Contact](#Contact)
 
-# <span id="SpeechLargeModel">Speech Large Model</span>
-|                                                            Model 	                                                             |   Publisher 	    | Achievable Tasks                                                                                                                                                                            |
-|:------------------------------------------------------------------------------------------------------------------------------:|:----------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                VoiceBox   <br>  [Website](https://voicebox.metademolab.com/) 	                                 |      Meta 	      | 1. Synthesize speech across six languages<br> 2. Remove transient noise<br> 3. Edit content<br> 4. Transfer audio style within and across languages<br>5. Generate diverse speech samples 	 |
-|                              AudioPaLM <br>  [Paper](https://arxiv.org/pdf/2306.12925) [Website](https://google-research.github.io/seanet/audiopalm/examples)	    | Google | 1. Speech-to-speech translation <br> 2. Automatic Speech Recognition (ASR)                                                                                                                  |
-|                                SpeechGPT <br>  [Website](https://github.com/0nutation/SpeechGPT) 	                                | Fudan University | 1. Perceive and generate multi-modal contents <br> 2. Spoken dialogue LLM with strong human instruction                                                                                     |
-| VALL-E  <br>  [Paper](https://arxiv.org/abs/2301.02111) [Website](https://www.microsoft.com/en-us/research/project/vall-e-x/)	 |   Microsoft 	    | 1. Simply record a 3-second registration of an unseen speaker to create a high-quality personalised speech  <br> 2. VALL-E X: Cross-lingual speech synthesis                                |
-|                                   USM  <br>  [Website](https://sites.research.google/usm/) 	                                   |     Google 	     | 1. ASR beyond 100 languages<br> 2. Downstream ASR tasks <br> 3. Automated Speech Translation (AST)                                                                                          |
+# <span id="SpeechLargeModel">Audio Large Model</span>
+|  Model 	 |   Publisher  | Years| Achievable Tasks    |
+|:----:|:-------------:|:--------------:|:--------------------|
+| AudioLM  <br>  [Paper](https://arxiv.org/pdf/2209.03143) [Website](https://google-research.github.io/seanet/audiolm/examples/) [Code](https://github.com/lucidrains/audiolm-pytorch) |  Google | 2022.09 |1. AudioLM maps the input audio to a sequence of discrete tokens and casts audio generation as a language modeling task in this representation space. <br> 2. Speech continuation, Acoustic generation, Unconditional generation, Generation without semantic tokens, and Piano continuation. |
+| VALL-E  <br>  [Paper](https://arxiv.org/abs/2301.02111) [Website](https://www.microsoft.com/en-us/research/project/vall-e-x/)	 |   Microsoft | 2023.01|1. Simply record a 3-second registration of an unseen speaker to create a high-quality personalised speech.  <br> 2. VALL-E X: Cross-lingual speech synthesis. |
+|   USM  <br>  [Website](https://sites.research.google/usm/)  |     Google  | 2023.03| 1. ASR beyond 100 languages.<br> 2. Downstream ASR tasks. <br> 3. Automated Speech Translation (AST).    |
+|  SpeechGPT <br>  [Website](https://github.com/0nutation/SpeechGPT) 	   | Fudan University |2023.05| 1. Perceive and generate multi-modal contents. <br> 2. Spoken dialogue LLM with strong human instruction.     |
+|  Pengi <br>  [Paper](https://arxiv.org/pdf/2305.11834.pdf) [Website](https://github.com/microsoft/Pengi)  | Microsoft |2023.05| 1. an Audio Language Model that leverages Transfer Learning by framing all audio tasks as text-generation tasks. <br> 2. The unified architecture of Pengi enables open-ended tasks and close-ended tasks without any additional fine-tuning or task-specific extensions.     |
+|  VoiceBox   <br>  [Website](https://voicebox.metademolab.com/)  | Meta  | 2023.06| 1. Synthesize speech across six languages.<br> 2. Remove transient noise.<br> 3. Edit content.<br> 4. Transfer audio style within and across languages.<br>5. Generate diverse speech samples. 	 |
+|  AudioPaLM <br>  [Paper](https://arxiv.org/pdf/2306.12925) [Website](https://google-research.github.io/seanet/audiopalm/examples)	    | Google | 2023.06|1. Speech-to-speech translation. <br> 2. Automatic Speech Recognition (ASR).  |
 
 # <span id="Datasets">Datasets</span>
 |  Attack Types   |                                                  Dataset 	                                                  |          Number of Audio  <br>（Subdataset：Real/Fake） 	          |        Language 	         |
