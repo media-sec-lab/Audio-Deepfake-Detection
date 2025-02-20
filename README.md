@@ -542,7 +542,7 @@ Note: "—" indicates not mentioned in the paper. Values in brackets in the expe
 
 
 ## <span id="ff">Feature Fusion-based Forgery Detection</span>
-
+[**⬆ Back to top**](#table-of-contents)
 <table>
 	<tr>
 	    <td align="center" rowspan="2">Paper</td>
