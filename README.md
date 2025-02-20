@@ -76,14 +76,14 @@
   - **A Comprehensive Survey with Critical Analysis for Deepfake Speech Detection**
   - **Author(s):** Lam Pham, Phat Lam, Tin Nguyen, Hieu Tang, Huyen Nguyen, Alexander Schindler, Canh Vu
   - [Paper](https://arxiv.org/abs/2409.15180)
-- `【2024-12】-【ADD-Survey】-【Imperial College London, Technical University of Munich】`
-  - **From Audio Deepfake Detection to AI-Generated Music Detection——A Pathway and Overview**
-  - **Author(s):** Yupei Li, Manuel Milling, Lucia Specia, Björn W. Schuller
-  - [Paper](https://arxiv.org/abs/2412.00571)
 - `【2024-11】-【Multimodal-Survey】-【University of Bucharest】`
   - **Deepfake Media Generation and Detection in the Generative AI Era: A Survey and Outlook**
   - **Author(s):** Forinel-Alin Croitoru, Andrei-Iulian Hıˆji, Vlad Hondru, Nicolae Cat  ̆alin Ristea, Paul Irofti, Marius Popescu, Cristian Rusu, Radu Tudor Ionescu, Fahad Shahbaz Khan, and Mubarak Shah
   - [Paper](https://arxiv.org/abs/2411.19537)
+- `【2024-12】-【ADD-Survey】-【Imperial College London, Technical University of Munich】`
+  - **From Audio Deepfake Detection to AI-Generated Music Detection——A Pathway and Overview**
+  - **Author(s):** Yupei Li, Manuel Milling, Lucia Specia, Björn W. Schuller
+  - [Paper](https://arxiv.org/abs/2412.00571)
 - `【2025-02】-【Multimodal-Survey】-【BUPT, University of California, CASIA】`
   - **Survey on AI-Generated Media Detection: From Non-MLLM to MLLM**
   - **Author(s):** Yueying Zou, Peipei Li, Zekun Li, Huaibo Huang, Xing Cui, Xuannan Liu, Chenghanyu Zhang, Ran He
