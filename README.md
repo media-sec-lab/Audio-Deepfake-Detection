@@ -2,7 +2,7 @@
 > 
 > A curated collection of papers and resources on Audio Deepfake Detection (ADD).
 > 
-> Please refer to our survey [**"Research progress on speech deepfake and its detection techniques"**](10.11834/jig.230476) for the detailed contents. [![Paper page](https://huggingface.co/datasets/huggingface/badges/raw/main/paper-page-sm-dark.svg)](10.11834/jig.230476)
+> Please refer to our survey [**"Research progress on speech deepfake and its detection techniques"**](https://www.cjig.cn/en/article/doi/10.11834/jig.230476/?viewType=HTML) for the detailed contents. [![Paper page](https://huggingface.co/datasets/huggingface/badges/raw/main/paper-page-sm-dark.svg)](https://www.cjig.cn/en/article/doi/10.11834/jig.230476/?viewType=HTML)
 > 
 > Please let us know if you discover any mistakes or have suggestions by emailing us: xuyuxiong2022@email.szu.edu.cn
 
