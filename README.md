@@ -174,6 +174,7 @@
 |Codec-based Speech <br>Generation (CoSG)|2024|CodecFake<br>[Paper](https://arxiv.org/abs/2406.07237) [Dataset](https://codecfake.github.io/)|42,752/45,045|English|
 |Codec-based Speech <br>Generation (CoSG)|2024|ALM-ADD<br>[Paper](https://arxiv.org/abs/2408.10853) [Dataset](https://github.com/xieyuankun/ALM-ADD)|123/210|English|
 |Codec-based Speech <br>Generation (CoSG)|2024|Codecfake<br>[Paper](https://ieeexplore.ieee.org/abstract/document/10830534) [Dataset](https://zenodo.org/records/13838106)|132,277/925,939|English, Chinese|
+|Codec-based Speech <br>Generation (CoSG)|2025|ST-Codecfake<br>[Paper](https://arxiv.org/pdf/2501.06514) [Dataset](https://zenodo.org/records/14631091)|13,228/145,778|English, Chinese|
 |Codec-based Speech <br>Generation (CoSG)|2025|CodecFake-Omni<br>[Paper](https://arxiv.org/abs/2501.08238)|-|English|
 
 
